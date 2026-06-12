@@ -1,28 +1,28 @@
 # Deployment Information
 
 ## Public URL
-https://your-agent.railway.app *(Thay thế bằng URL thực tế sau khi deploy)*
+https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com
 
 ## Platform
-Railway (hoặc Render)
+Render
 
 ## Test Commands
 
 ### Health Check
 ```bash
-curl https://your-agent.railway.app/health
+curl https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com/health
 # Expected output: {"status": "ok", ...}
 ```
 
 ### Readiness Check
 ```bash
-curl https://your-agent.railway.app/ready
+curl https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com/ready
 # Expected output: {"ready": true}
 ```
 
 ### API Test (without authentication)
 ```bash
-curl -X POST https://your-agent.railway.app/ask \
+curl -X POST https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com/ask \
   -H "Content-Type: application/json" \
   -d '{"question": "Hello"}'
 # Expected output: {"detail": "Invalid or missing API key. Include header: X-API-Key: <key>"} (HTTP 401)
@@ -30,8 +30,8 @@ curl -X POST https://your-agent.railway.app/ask \
 
 ### API Test (with authentication)
 ```bash
-curl -X POST https://your-agent.railway.app/ask \
-  -H "X-API-Key: your-secret-api-key" \
+curl -X POST https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com/ask \
+  -H "X-API-Key: <your-agent-api-key>" \
   -H "Content-Type: application/json" \
   -d '{"question": "Hello"}'
 # Expected output: {"question": "Hello", "answer": "...", "model": "...", "timestamp": "..."} (HTTP 200)

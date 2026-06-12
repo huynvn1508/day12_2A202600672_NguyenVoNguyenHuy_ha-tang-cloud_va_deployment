@@ -71,9 +71,9 @@ flowchart TD
 
 ## Part 3: Cloud Deployment
 
-### Exercise 3.1: Railway deployment
-- **Public URL:** https://your-agent.railway.app *(Thay đổi bằng URL thực tế sau khi deploy)*
-- **Screenshot:** [Link to screenshot in repo](screenshots/dashboard.png) *(Thay đổi bằng link ảnh thực tế sau khi deploy)*
+### Exercise 3.1: Railway deployment (Deploy trên Render)
+- **Public URL:** https://day12-2a202600672-nguyenvonguyenhuy-ha.onrender.com
+- **Screenshot:** [Link to screenshot in repo](screenshots/dashboard.png)
 
 ### Exercise 3.2: So sánh render.yaml vs railway.toml
 - **`railway.toml`:** 
